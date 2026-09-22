@@ -5,7 +5,7 @@
   "type": "module",
   "main": "ssh-client.js",
   "bin": {
-    "ssh-orbit": "./bin/ssh-orbit.js"
+    "ssh-orbit": "bin/ssh-orbit.js"
   },
   "files": [
     "bin/",
@@ -41,7 +41,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmedyusef9/ssh-orbit.git"
+    "url": "git+https://github.com/ahmedyusef9/ssh-orbit.git"
   },
   "bugs": {
     "url": "https://github.com/ahmedyusef9/ssh-orbit/issues"
