@@ -4,8 +4,8 @@
       "command": "npx",
       "args": ["-y", "ssh-orbit@1.0.3"],
       "env": {
-        "SSH_ORBIT_ALLOWED_TARGETS": "ubuntu@prod1.example.com,10.0.1.50",
-        "SSH_ORBIT_ALLOWED_PATH_PREFIXES": "/app,/var/log",
+        "SSH_ORBIT_ALLOWED_TARGETS": "VM_USER@VM_HOST:22",
+        "SSH_ORBIT_ALLOWED_PATH_PREFIXES": "/home/VM_USER,/var/log",
         "SSH_ORBIT_HOSTKEY_MODE": "known_hosts",
         "SSH_ORBIT_KNOWN_HOSTS_PATH": "/home/YOUR_USER/.ssh/known_hosts",
         "SSH_PRIVATE_KEY_PATH": "/home/YOUR_USER/.ssh/ssh_orbit_ed25519"
@@ -13,4 +13,3 @@
     }
   }
 }
-

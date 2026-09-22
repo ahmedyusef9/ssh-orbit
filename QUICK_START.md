@@ -9,12 +9,12 @@ Get started with SSH Orbit in 5 minutes!
 #### Claude Desktop
 
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows**: `%APPDATA%\\Claude\\claude_desktop_config.json`
+- **Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
 
 #### Cursor IDE (MCP)
 
 - **macOS/Linux**: `~/.cursor/mcp.json`
-- **Windows**: `%USERPROFILE%\\.cursor\\mcp.json`
+- **Windows**: `%USERPROFILE%/.cursor/mcp.json`
 
 ### Step 2: Add SSH Orbit Configuration
 
@@ -72,7 +72,7 @@ If you want to restrict which servers can be reached (**recommended for producti
       "env": {
         "SSH_ORBIT_ALLOWED_TARGETS": "ubuntu@prod1.example.com,10.0.1.50",
         "SSH_ORBIT_ALLOWED_PATH_PREFIXES": "/app,/var/log",
-        "SSH_PRIVATE_KEY_PATH": "C:\\\\Users\\\\YOUR_USER\\\\.ssh\\\\id_ed25519"
+        "SSH_PRIVATE_KEY_PATH": "C:/Users/YOUR_USER/.ssh/ssh_orbit_ed25519"
       }
     }
   }
@@ -80,6 +80,8 @@ If you want to restrict which servers can be reached (**recommended for producti
 ```
 
 ### Step 3: Set Up SSH Key (Choose One)
+
+For a dedicated key and VM setup, follow [DEPLOYMENT_MANUAL.md](DEPLOYMENT_MANUAL.md).
 
 **Option A: Use Default Key** (easiest)
 - Ensure you have `~/.ssh/id_rsa` or `~/.ssh/id_ed25519`
@@ -189,7 +191,7 @@ npm pack
 npm install -g ./ssh-orbit-1.0.3.tgz
 ```
 
-> Windows note: global npm bin path is usually `C:\\Users\\<you>\\AppData\\Roaming\\npm`. If `ssh-orbit` is not found, add that to PATH or restart your terminal.
+> Windows note: the global npm bin path is usually `C:/Users/<you>/AppData/Roaming/npm`. If `ssh-orbit` is not found, add that directory to your PATH or restart your terminal.
 
 ### If you don't want a global install
 

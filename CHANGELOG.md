@@ -9,6 +9,8 @@ All notable changes to SSH Orbit are documented here.
 - Enforced directory-boundary semantics for path allowlists.
 - Made heredoc delimiters collision-resistant for remote file writes.
 - Bounded command timeouts to one hour or less.
+- Added a deployment manual covering key generation, VM access, SCP, Cursor, and Claude Desktop.
+- Added copy-ready Cursor and Claude Desktop MCP configuration examples.
 - Removed machine-specific paths from public documentation.
 
 ## 1.0.0

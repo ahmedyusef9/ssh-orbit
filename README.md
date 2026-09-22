@@ -42,14 +42,14 @@ npm start
 Add to your Claude Desktop MCP configuration file:
 
 **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
-**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+**Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "ssh": {
-      "command": "node",
-      "args": ["/absolute/path/to/ssh-orbit/bin/ssh-orbit.js"]
+      "command": "npx",
+      "args": ["-y", "ssh-orbit@1.0.3"]
     }
   }
 }
@@ -58,6 +58,14 @@ Add to your Claude Desktop MCP configuration file:
 > `env` is **optional**. Only add it if you want allowlists, custom keys, host-key verification, or password auth.
 
 **That's it!** Claude can now execute SSH commands on your remote servers.
+
+### Install in Cursor or Claude Desktop
+
+For key generation, VM access, SCP, allowlists, and a copy-paste operating
+prompt, see [DEPLOYMENT_MANUAL.md](DEPLOYMENT_MANUAL.md).
+
+Ready-to-copy configuration examples are available for [Cursor](examples/cursor-mcp.with-env.optional.json)
+and [Claude Desktop](examples/claude-desktop.mcp.json).
 
 ---
 
