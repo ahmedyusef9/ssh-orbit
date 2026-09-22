@@ -2,11 +2,25 @@
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ahmedyusef9/ssh-orbit)](https://github.com/ahmedyusef9/ssh-orbit/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/ahmedyusef9/ssh-orbit)](https://github.com/ahmedyusef9/ssh-orbit/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/ahmedyusef9/ssh-orbit)](https://github.com/ahmedyusef9/ssh-orbit/forks)
 
 A secure, high-performance **Model Context Protocol (MCP) server** that enables AI assistants like Claude Desktop to execute SSH commands and perform token-efficient file operations on remote Linux servers. Built with Node.js and the official MCP SDK for maximum compatibility and reliability.
 
 > **License:** MIT  
 > **Author:** Ahmad Abo Alhija
+
+## 🔗 Repository Resources
+
+- [Readme](https://github.com/ahmedyusef9/ssh-orbit#readme)
+- [MIT license](https://github.com/ahmedyusef9/ssh-orbit/blob/main/LICENSE)
+- [Security policy](https://github.com/ahmedyusef9/ssh-orbit/blob/main/SECURITY.md)
+- [Activity](https://github.com/ahmedyusef9/ssh-orbit/activity)
+- [Releases](https://github.com/ahmedyusef9/ssh-orbit/releases)
+- [GitHub packages](https://github.com/users/ahmedyusef9/packages?repo_name=ssh-orbit)
+- [Contributors](https://github.com/ahmedyusef9/ssh-orbit/graphs/contributors)
+- [Issues](https://github.com/ahmedyusef9/ssh-orbit/issues)
 
 ---
 
