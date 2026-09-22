@@ -9,7 +9,7 @@
 A secure, high-performance **Model Context Protocol (MCP) server** that enables AI assistants like Claude Desktop to execute SSH commands and perform token-efficient file operations on remote Linux servers. Built with Node.js and the official MCP SDK for maximum compatibility and reliability.
 
 > **License:** MIT  
-> **Author:** Ahmad Abo Alhija
+> **Author:** Ahmad Abo Alhija · [Connect on LinkedIn](https://www.linkedin.com/in/ahmedyusef-ah/)
 
 ## 🔗 Repository Resources
 
@@ -80,6 +80,30 @@ prompt, see [DEPLOYMENT_MANUAL.md](DEPLOYMENT_MANUAL.md).
 
 Ready-to-copy configuration examples are available for [Cursor](examples/cursor-mcp.with-env.optional.json)
 and [Claude Desktop](examples/claude-desktop.mcp.json).
+
+### Minimal Cursor MCP Configuration
+
+Add this simple entry to Cursor's `mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "ssh-orbit": {
+      "command": "npx",
+      "args": ["-y", "ssh-orbit@1.0.3"]
+    }
+  }
+}
+```
+
+Cursor MCP configuration locations:
+
+- macOS/Linux: `~/.cursor/mcp.json`
+- Windows: `%USERPROFILE%/.cursor/mcp.json`
+
+Restart Cursor after saving the file. To verify the connection, ask Cursor:
+
+> Use SSH Orbit to run the read-only command `hostname` on `VM_USER@VM_HOST`. Report the hostname and exit code. Do not change anything.
 
 ---
 
@@ -584,7 +608,7 @@ npx ssh-orbit@latest
 
 MIT License — see [LICENSE](LICENSE).
 
-**Author:** Ahmad Abo Alhija
+**Author:** Ahmad Abo Alhija · [Connect on LinkedIn](https://www.linkedin.com/in/ahmedyusef-ah/)
 
 ---
 
