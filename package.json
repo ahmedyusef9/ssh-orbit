@@ -1,0 +1,57 @@
+{
+  "name": "ssh-orbit",
+  "version": "1.0.3",
+  "description": "A secure, high-performance Model Context Protocol (MCP) server for SSH command execution and remote file operations",
+  "type": "module",
+  "main": "ssh-client.js",
+  "bin": {
+    "ssh-orbit": "./bin/ssh-orbit.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "ssh-client.js",
+    "installer.sh",
+    "examples/",
+    "README.md",
+    "LICENSE",
+    "QUICK_START.md",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "start": "node bin/ssh-orbit.js",
+    "dev": "node --watch bin/ssh-orbit.js",
+    "test": "node --test",
+    "check": "npm test && node --check ssh-client.js && node --check lib/file-tools.js && node --check lib/security.js && node --check bin/ssh-orbit.js"
+  },
+  "keywords": [
+    "mcp",
+    "ssh",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "remote-execution",
+    "ssh-client",
+    "remote-files",
+    "token-efficient"
+  ],
+  "author": "Ahmad Abo Alhija",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedyusef9/ssh-orbit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmedyusef9/ssh-orbit/issues"
+  },
+  "homepage": "https://github.com/ahmedyusef9/ssh-orbit#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "ssh2": "^1.16.0"
+  }
+}

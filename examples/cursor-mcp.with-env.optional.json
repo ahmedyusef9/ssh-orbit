@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ssh-orbit": {
+      "command": "ssh-orbit",
+      "args": [],
+      "env": {
+        "SSH_ORBIT_ALLOWED_TARGETS": "ubuntu@prod1.example.com,10.0.1.50",
+        "SSH_ORBIT_ALLOWED_PATH_PREFIXES": "/app,/var/log",
+        "SSH_ORBIT_HOSTKEY_MODE": "accept_any",
+        "SSH_PRIVATE_KEY_PATH": "C:\\\\Users\\\\YOUR_USER\\\\.ssh\\\\id_ed25519"
+      }
+    }
+  }
+}
+
